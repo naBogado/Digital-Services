@@ -1,0 +1,199 @@
+@import url(../styles/globals.css);
+
+.card {
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  margin: 1rem 0;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: flex;
+  gap: 1rem;
+}
+.content .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+}
+.content .our-team {
+  width: 30%;
+}
+
+.description {
+  color: var(--alt-font-color);
+}
+
+.benefits {
+  margin: 1rem 0;
+}
+.benefits .cards {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  height: 8rem;
+  gap: 1rem;
+}
+.benefits .cards article {
+  background-color: var(--surface-color);
+  border-radius: 8px;
+  height: 100%;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.technologies .techs {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.technologies .techs article {
+  background-color: var(--surface-color);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.technologies .techs article p {
+  font-weight: 200;
+}
+
+.our-team {
+  gap: 1rem;
+}
+.our-team .personal {
+  padding: 1rem;
+  gap: 3rem;
+}
+.our-team .personal article {
+  margin: 0.5rem 0;
+  width: fit-content;
+  text-align: center;
+}
+.our-team span {
+  display: block;
+  height: 6rem;
+  width: 6rem;
+  border: 2px solid var(--primary-light-color);
+  background-color: var(--surface-color);
+  border-radius: 50%;
+}
+
+@media (375px >= width) {
+  .card {
+    height: 8rem;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .content .right {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .content .our-team {
+    width: 100%;
+  }
+
+  .benefits .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 14rem;
+  }
+  .benefits .cards article {
+    height: 33%;
+    width: 100%;
+    justify-content: start;
+    padding: 0 1rem;
+  }
+
+  .technologies .techs {
+    flex-wrap: wrap;
+  }
+  .technologies .techs article {
+    width: 4rem;
+    height: 4rem;
+  }
+  .technologies .techs article p {
+    font-size: 0.8rem;
+  }
+
+  .our-team {
+    margin-bottom: 0;
+  }
+  .our-team .personal {
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .our-team .personal article {
+    margin: 1rem 0;
+  }
+  .our-team span {
+    height: 5rem;
+    width: 5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (width >= 1400px) {
+  .card {
+    margin: 2rem 0;
+    height: 14rem;
+  }
+  .content {
+    gap: 2rem;
+  }
+
+  .benefits {
+    margin: 2rem 0;
+  }
+  .benefits .cards {
+    padding: 2rem 0;
+    height: 12rem;
+    gap: 2rem;
+  }
+  .benefits .cards article {
+    padding: 2rem;
+    justify-content: start;
+  }
+
+  .technologies .techs {
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  .technologies .techs article {
+    width: 8rem;
+    height: 8rem;
+  }
+  .technologies button {
+    transform: scale(150%);
+    margin-left: 2.25rem;
+  }
+
+  .our-team {
+    gap: 2rem;
+  }
+  .our-team .personal {
+    padding: 2rem;
+  }
+  .our-team .personal article {
+    margin: 1rem 0;
+  }
+  .our-team span {
+    height: 8rem;
+    width: 8rem;
+  }
+}
