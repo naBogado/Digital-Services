@@ -1,19 +1,6 @@
 @import url(./globals.css);
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-body {
-  padding: 1rem;
-  line-height: 1.5rem;
-}
 /* MAIN */
-main {
-  color: var(--font-color);
-}
-h2,
-h3,
-p {
-  font-size: 1rem;
-}
 .contact-us {
   margin-top: 1rem;
   display: flex;
@@ -97,24 +84,13 @@ p {
 }
 .clients article span {
   border-radius: 4px;
-  height: 1.8rem;
-  width: 60px;
+  height: 3rem;
+  width: 4.5rem;
   background-color: var(--surface2-color);
 }
 
 @media (375px >= width) {
-  body {
-    padding: 0;
-  }
-  h2,
-  h3,
-  p {
-    font-size: 1.15rem;
-  }
   /* MAIN */
-  main {
-    padding: 1rem;
-  }
   .contact-us {
     width: 100%;
     margin-bottom: 1rem;
@@ -156,16 +132,6 @@ p {
   }
 }
 @media (width >= 1400px) {
-  body {
-    padding: 2rem;
-    line-height: 2.5rem;
-  }
-  h2,
-  h3,
-  p {
-    font-size: 1.75rem;
-  }
-
   /* MAIN */
   .contact-us {
     margin-top: 2rem;
@@ -206,7 +172,7 @@ p {
     height: 6rem;
   }
   .clients article span {
-    height: 3.2rem;
+    height: 5rem;
     width: 6.5rem;
   }
   .clients article {

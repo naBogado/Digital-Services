@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 :root {
   --primary-color: #6d28d9;
   --primary-light-color: #8b5cf6;
@@ -6,6 +8,8 @@
   --background-color: #121212;
   --surface-color: #1e1e1e;
   --surface2-color: #2d2d2d;
+
+  --input-color: #191919;
 
   --font-color: #e0e0e0;
   --alt-font-color: #a0a0a0;
@@ -42,6 +46,16 @@
 }
 body {
   background-color: var(--background-color);
+  padding: 1rem;
+  line-height: 1.5rem;
+}
+main {
+  color: var(--font-color);
+}
+h2,
+h3,
+p {
+  font-size: 1rem;
 }
 
 /* HEADER */
@@ -51,7 +65,7 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: var(--surface-color);
-  padding: 1% 3%;
+  padding: 1rem 2rem;
   align-items: center;
   border-radius: 8px;
 }
@@ -60,12 +74,12 @@ header button {
 }
 .logo {
   background-color: var(--primary-color);
-  width: 70px;
-  height: 42px;
+  width: 4.375rem;
+  height: 2.625rem;
   border-radius: 4px;
 }
 .index {
-  width: 367px;
+  width: 24rem;
 }
 .index ul {
   list-style: none;
@@ -77,6 +91,7 @@ header button {
   color: var(--alt-font-color);
   text-decoration: none;
   margin: 0.5rem;
+  font-weight: 350;
 }
 .burguer {
   display: none;
@@ -85,27 +100,42 @@ header button {
 /* FOOTER */
 footer {
   background-color: var(--surface-color);
-  margin-top: 0.5rem;
-  height: 5rem;
+  margin-top: 1rem;
+  height: 7rem;
   text-align: center;
   border-radius: 8px;
   padding: 1rem;
 }
 footer p {
   color: var(--alt-font-color);
+  font-weight: 300;
 }
 
 @media (375px >= width) {
+  body {
+    padding: 0;
+  }
+  main {
+    padding: 0 1rem;
+  }
+  h2,
+  h3,
+  p {
+    font-size: 1.15rem;
+  }
+
+  /* HEADER */
   header {
     border-radius: unset;
+    padding: 1rem;
   }
   .index {
     display: none;
   }
   .burguer {
     padding: 5px 0;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -121,27 +151,41 @@ footer p {
   footer {
     border-radius: unset;
   }
+  footer p {
+    font-size: 1rem;
+  }
 }
 
 @media (width >= 1400px) {
+  body {
+    line-height: 2.5rem;
+    padding: 2rem;
+  }
+  h2,
+  h3,
+  p {
+    font-size: 1.75rem;
+  }
+
   /* HEADER */
   header {
     max-width: 1440px;
     height: 6rem;
   }
   .logo {
-    width: 105px;
-    height: 63px;
+    width: 6.563rem;
+    height: 3.938rem;
   }
   .index {
-    width: 550px;
+    width: 34.375rem;
   }
   .index ul li a {
     font-size: 1.6rem;
   }
   /* FOOTER */
   footer {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
+    height: 7rem;
   }
   footer p {
     font-size: 1.45rem;
@@ -156,6 +200,7 @@ footer p {
   border-radius: var(--p-button-radius);
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-weight: 300;
 }
 .secondary-button {
   background-color: var(--s-button-background-color);
@@ -165,6 +210,7 @@ footer p {
   border-radius: var(--s-button-radius);
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-weight: 300;
 }
 .terciary-button {
   background-color: var(--t-button-background-color);
@@ -175,4 +221,37 @@ footer p {
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-decoration: underline;
+  font-weight: 300;
+}
+
+.input {
+  padding: 0.25rem;
+  border: unset;
+  background-color: var(--input-color);
+  border: 1px solid var(--surface2-color);
+}
+.input:focus-visible {
+  outline: var(--surface-color) auto 1px;
+  border: 1px solid var(--background-color);
+}
+.textarea {
+  padding: 0.25rem;
+  border: unset;
+  background-color: var(--input-color);
+  border: 1px solid var(--surface2-color);
+}
+.textarea:focus-visible {
+  outline: var(--surface-color) auto 1px;
+  border: 1px solid var(--background-color);
+}
+.select {
+  padding: 0.25rem;
+  border: unset;
+  background-color: var(--input-color);
+  border: 1px solid var(--surface2-color);
+  color: var(--alt-font-color);
+}
+.select:focus-visible {
+  outline: var(--surface-color) auto 1px;
+  border: 1px solid var(--background-color);
 }
