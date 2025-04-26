@@ -60,7 +60,6 @@ p {
 
 /* HEADER */
 header {
-  max-width: 1440px;
   height: 4rem;
   display: flex;
   justify-content: space-between;
@@ -169,7 +168,6 @@ footer p {
 
   /* HEADER */
   header {
-    max-width: 1440px;
     height: 6rem;
   }
   .logo {
