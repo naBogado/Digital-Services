@@ -62,6 +62,9 @@
   justify-content: center;
   align-items: center;
 }
+.technologies .techs article p {
+  font-weight: 200;
+}
 
 .our-team {
   gap: 1rem;
